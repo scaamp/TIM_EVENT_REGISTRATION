@@ -1,0 +1,37 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.0'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.6.7'
+	implementation 'org.springframework.boot:spring-boot-starter-web:2.6.7'
+	runtimeOnly 'org.postgresql:postgresql:42.3.4'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.6.7'
+	testImplementation "junit:junit:4.12"
+}
+
+task compile(type: JavaCompile) {
+	classpath = sourceSets.main.compileClasspath
+	classpath += sourceSets.test.runtimeClasspath
+	sourceSets.test.java.outputDir = file('build/bin')
+	sourceSets.main.java.outputDir = file('build/bin')
+}
+
+sourceSets {
+	main {
+		java { srcDir 'src/main/java' }
+	}
+	test {
+		java { srcDir 'src/test/java'}
+	}
+}
