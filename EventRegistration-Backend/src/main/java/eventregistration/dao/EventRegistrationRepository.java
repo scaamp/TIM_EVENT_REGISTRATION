@@ -12,10 +12,6 @@ import java.sql.Date;
 import java.sql.Time;
 import java.util.List;
 
-/**
- * 
- * @deprecated use the <link>ca.mcgill.ecse321.eventregistration.service.EventRegistrationService</code> class instead
- */
 @Repository
 public class EventRegistrationRepository {
 

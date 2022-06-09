@@ -24,13 +24,6 @@ public class EventRegistrationRestController {
 	@Autowired
 	private EventRegistrationService service;
 
-	// POST Mappings
-
-	// @formatter:off
-	// Turning off formatter here to ease comprehension of the sample code by
-	// keeping the linebreaks
-	// Example REST call:
-	// http://localhost:8088/persons/John
 	@PostMapping(value = { "/persons/{name}", "/persons/{name}/" })
 	public PersonDto createPerson(@PathVariable("name") String name) throws IllegalArgumentException {
 		// @formatter:on
@@ -38,9 +31,6 @@ public class EventRegistrationRestController {
 		return convertToDto(person);
 	}
 
-	// @formatter:off
-	// Example REST call:
-	// http://localhost:8080/events/testevent?date=2013-10-23&startTime=00:00&endTime=23:59
 	@PostMapping(value = { "/events/{name}", "/events/{name}/" })
 	public EventDto createEvent(@PathVariable("name") String name, @RequestParam Date date,
 			@RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.TIME, pattern = "HH:mm") LocalTime startTime,
@@ -51,13 +41,9 @@ public class EventRegistrationRestController {
 		return convertToDto(event);
 	}
 
-	// @formatter:off
 	@PostMapping(value = { "/register", "/register/" })
 	public RegistrationDto registerPersonForEvent(@RequestParam(name = "person") PersonDto pDto,
 			@RequestParam(name = "event") EventDto eDto) throws IllegalArgumentException {
-		// @formatter:on
-
-		// Both the person and the event are identified by their names
 		Person p = service.getPerson(pDto.getName());
 		Event e = service.getEvent(eDto.getName());
 
@@ -76,8 +62,6 @@ public class EventRegistrationRestController {
 		return eventDtos;
 	}
 
-	// Example REST call:
-	// http://localhost:8088/events/person/JohnDoe
 	@GetMapping(value = { "/events/person/{name}", "/events/person/{name}/" })
 	public List<EventDto> getEventsOfPerson(@PathVariable("name") PersonDto pDto) {
 		Person p = convertToDomainObject(pDto);
@@ -92,7 +76,6 @@ public class EventRegistrationRestController {
 	@GetMapping(value = { "/registrations", "/registrations/" })
 	public RegistrationDto getRegistration(@RequestParam(name = "person") PersonDto pDto,
 										   @RequestParam(name = "event") EventDto eDto) throws IllegalArgumentException {
-		// Both the person and the event are identified by their names
 		Person p = service.getPerson(pDto.getName());
 		Event e = service.getEvent(eDto.getName());
 
@@ -103,7 +86,6 @@ public class EventRegistrationRestController {
 	@GetMapping(value = { "/registrations/person/{name}", "/registrations/person/{name}/" })
 	public List<RegistrationDto> getRegistrationsForPerson(@PathVariable("name") PersonDto pDto)
 			throws IllegalArgumentException {
-		// Both the person and the event are identified by their names
 		Person p = service.getPerson(pDto.getName());
 
 		return createRegistrationDtosForPerson(p);
@@ -123,8 +105,6 @@ public class EventRegistrationRestController {
 		return convertToDto(service.getEvent(name));
 	}
 
-	// Model - DTO conversion methods (not part of the API)
-
 	private EventDto convertToDto(Event e) {
 		if (e == null) {
 			throw new IllegalArgumentException("There is no such Event!");
@@ -142,7 +122,6 @@ public class EventRegistrationRestController {
 		return personDto;
 	}
 
-	// DTOs for registrations
 	private RegistrationDto convertToDto(Registration r, Person p, Event e) {
 		EventDto eDto = convertToDto(e);
 		PersonDto pDto = convertToDto(p);
@@ -156,8 +135,6 @@ public class EventRegistrationRestController {
 		return rDto;
 	}
 
-	// return registration dto without peron object so that we are not repeating
-	// data
 	private RegistrationDto convertToDtoWithoutPerson(Registration r) {
 		RegistrationDto rDto = convertToDto(r);
 		rDto.setPerson(null);
@@ -173,8 +150,6 @@ public class EventRegistrationRestController {
 		}
 		return null;
 	}
-
-	// Other extracted methods (not part of the API)
 
 	private List<EventDto> createAttendedEventDtosForPerson(Person p) {
 		List<Event> eventsForPerson = service.getEventsAttendedByPerson(p);
