@@ -1,172 +1,181 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-23:12
-MERGED from [com.android.support:design:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\e4a460322651cd5865c098776be0eeb8\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\2da37a138078f2387d3759be13dd6315\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\df6937409ca6a1d1cb5138fd70867ac8\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\ec1b651b4d0e63939defe29999966f76\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\1747fddcf36785dc92188e53fba1b465\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\2927639b13ee911b31d2c220d940521e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\2ef0b1b31b478df025291f34d52fa905\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\3a780affbb82b3f9b384ae51b61efff0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\78f53c41a67aca77c93d391ec2304fda\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\b19bb1487e09b2155fbc37cab84e4aeb\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\080f4deca76f8c6de0189b5da48a122a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\b9b2d948accbb321c4c92803f2bf208a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\e98165d545c8282f18f2e87f01985070\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\c0ef8141441ced35ce2a196ab0286c8a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\e7ecf4b917dd626ab22b4c88c1904eb9\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\f86ee784624f4e8afe60445de42783b6\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\ceec9c2dcfc9021c1215b85cb184df18\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\e7c5dd9a5740096b6ee55140343e5557\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\3a53e9c71377b8db32bfa9f57ba2ce2f\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\36fc9f3251780cdd68c9f62e7b6ca0ec\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d35ef11bc4bb7b8846fb83ebb225b5f7\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\541981cd305cfb02bc10ca42d967569d\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\da6a9786235ea00a08096ae4dd4da2cd\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\9c285bb802c8dcffb28e3cdc13bcec75\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\cbc5bde0fe570ab7820053256404424e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\30caf2a160c5db39267551fe5fa44ab7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\136900157f58014de35397d7f883de98\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\03a99ad99a2488d36b8d79369549867c\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\c0e18d832192d17a2abb3f4accfd5bed\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\28dd68e799b1b6347709c5cbf71b6ec1\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\633afdc68ec2b72107e7664ea9f0d30e\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-25:12
+MERGED from [com.android.databinding:viewbinding:7.0.2] C:\Users\jkupi\.gradle\caches\transforms-3\391857fb9ecfdd92c27997809d9092e8\transformed\viewbinding-7.0.2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ecadb9bcf79677136195fed56f1e8a12\transformed\design-28.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\8fd11623966bb0584e113cba6c369170\transformed\appcompat-v7-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jkupi\.gradle\caches\transforms-3\4af9808a9d01f52de3df22fd185d8f4a\transformed\constraint-layout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\01ce58cb5dec02ff2dcf5e31777eb70a\transformed\support-fragment-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\493d801043c7b5409de5c054a138310a\transformed\recyclerview-v7-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\d09347d7015ac919f27baecb2a4aa9b5\transformed\animated-vector-drawable-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\32d53bd70fb6aafefab88a38711e2b80\transformed\support-core-ui-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\d6cf91d70e9f90ed48c03cc4e82d4a1f\transformed\support-core-utils-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ca25ee580cf311222cbfee59d001e30e\transformed\transition-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\a924792ed09f27f71b341992b008677d\transformed\support-vector-drawable-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\a22f9ff71f1edf1fe4f66b386fb8e4a4\transformed\viewpager-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\362c21bf486fe36d808c9907a31ee884\transformed\coordinatorlayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\bbd22f0e830f120d1d7022e6a4a0b2fb\transformed\drawerlayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\2ea285b7ae91134af2ca4bb77048a56f\transformed\slidingpanelayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\fdf1ba2d2c9953c3edf5b35f99d479af\transformed\customview-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\3b91920cf64056fe02a23d5f9234bf3e\transformed\swiperefreshlayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\5278c2e8b81630465bb68ddee38799fd\transformed\asynclayoutinflater-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\335934a6384f95abb2560c4dcdf086ba\transformed\loader-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\192ad8f6a0f651ff9f10305663e68198\transformed\support-compat-28.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ae0147c0b827ab8af8c45b5ef28395ad\transformed\cardview-v7-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\5d596afbbf514aaec8702eb472ca97f3\transformed\versionedparcelable-28.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\5469d3acc753b2c845dfdf96e65ea703\transformed\cursoradapter-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\jkupi\.gradle\caches\transforms-3\24b7454e8c63cb44018c3eb80150e376\transformed\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\00c853c6be18376f60855f1362b85a1c\transformed\interpolator-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\a95499803a806bc20d1fd4638c0c9eec\transformed\documentfile-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ebc0c7c92882fadc8fdb9f45927fc821\transformed\localbroadcastmanager-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ab4ac626fa615bb51ff79c5f5a113f59\transformed\print-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\jkupi\.gradle\caches\transforms-3\b2c59d30b7c8b57319743475697d8ad1\transformed\viewmodel-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\jkupi\.gradle\caches\transforms-3\315627340ffe1ce39273a67babb101e6\transformed\livedata-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\jkupi\.gradle\caches\transforms-3\3d30d1dfc52eef7a30e76658177aa636\transformed\livedata-core-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\jkupi\.gradle\caches\transforms-3\9144f778eb61599c0354b3e5bd6c8d2f\transformed\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-25:12
 	package
-		ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:3:5-50
-		INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:3:5-36
+		INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-23:12
-		INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-25:12
+		INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-23:12
-		INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-25:12
+		INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:4:5-67
 	android:name
-		ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:7:5-21:19
-MERGED from [com.android.support:design:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\e4a460322651cd5865c098776be0eeb8\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\e4a460322651cd5865c098776be0eeb8\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\df6937409ca6a1d1cb5138fd70867ac8\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\df6937409ca6a1d1cb5138fd70867ac8\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\3a53e9c71377b8db32bfa9f57ba2ce2f\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\3a53e9c71377b8db32bfa9f57ba2ce2f\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d35ef11bc4bb7b8846fb83ebb225b5f7\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d35ef11bc4bb7b8846fb83ebb225b5f7\AndroidManifest.xml:22:5-23:19
+ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:5:5-23:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ecadb9bcf79677136195fed56f1e8a12\transformed\design-28.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ecadb9bcf79677136195fed56f1e8a12\transformed\design-28.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jkupi\.gradle\caches\transforms-3\4af9808a9d01f52de3df22fd185d8f4a\transformed\constraint-layout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jkupi\.gradle\caches\transforms-3\4af9808a9d01f52de3df22fd185d8f4a\transformed\constraint-layout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\192ad8f6a0f651ff9f10305663e68198\transformed\support-compat-28.0.0\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\192ad8f6a0f651ff9f10305663e68198\transformed\support-compat-28.0.0\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\5d596afbbf514aaec8702eb472ca97f3\transformed\versionedparcelable-28.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\5d596afbbf514aaec8702eb472ca97f3\transformed\versionedparcelable-28.0.0\AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\3a53e9c71377b8db32bfa9f57ba2ce2f\AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\192ad8f6a0f651ff9f10305663e68198\transformed\support-compat-28.0.0\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:13:9-40
-activity#ca.mcgill.ecse321.eventregistration.MainActivity
-ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:14:9-20:20
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:11:9-55
+activity#tim.eventregistration.MainActivity
+ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:12:9-22:20
+	android:label
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:15:13-45
+	android:exported
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:14:13-36
+	android:theme
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:16:13-71
 	android:name
-		ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:14:19-47
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:13:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:20:27-74
 uses-sdk
-INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:design:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\e4a460322651cd5865c098776be0eeb8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\e4a460322651cd5865c098776be0eeb8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\2da37a138078f2387d3759be13dd6315\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\2da37a138078f2387d3759be13dd6315\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\df6937409ca6a1d1cb5138fd70867ac8\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\df6937409ca6a1d1cb5138fd70867ac8\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\ec1b651b4d0e63939defe29999966f76\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\ec1b651b4d0e63939defe29999966f76\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\1747fddcf36785dc92188e53fba1b465\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\1747fddcf36785dc92188e53fba1b465\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\2927639b13ee911b31d2c220d940521e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\2927639b13ee911b31d2c220d940521e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\2ef0b1b31b478df025291f34d52fa905\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\2ef0b1b31b478df025291f34d52fa905\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\3a780affbb82b3f9b384ae51b61efff0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\3a780affbb82b3f9b384ae51b61efff0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\78f53c41a67aca77c93d391ec2304fda\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\78f53c41a67aca77c93d391ec2304fda\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\b19bb1487e09b2155fbc37cab84e4aeb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\b19bb1487e09b2155fbc37cab84e4aeb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\080f4deca76f8c6de0189b5da48a122a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\080f4deca76f8c6de0189b5da48a122a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\b9b2d948accbb321c4c92803f2bf208a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\b9b2d948accbb321c4c92803f2bf208a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\e98165d545c8282f18f2e87f01985070\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\e98165d545c8282f18f2e87f01985070\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\c0ef8141441ced35ce2a196ab0286c8a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\c0ef8141441ced35ce2a196ab0286c8a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\e7ecf4b917dd626ab22b4c88c1904eb9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\e7ecf4b917dd626ab22b4c88c1904eb9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\f86ee784624f4e8afe60445de42783b6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\f86ee784624f4e8afe60445de42783b6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\ceec9c2dcfc9021c1215b85cb184df18\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\ceec9c2dcfc9021c1215b85cb184df18\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\e7c5dd9a5740096b6ee55140343e5557\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\e7c5dd9a5740096b6ee55140343e5557\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\3a53e9c71377b8db32bfa9f57ba2ce2f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\3a53e9c71377b8db32bfa9f57ba2ce2f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\36fc9f3251780cdd68c9f62e7b6ca0ec\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\36fc9f3251780cdd68c9f62e7b6ca0ec\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d35ef11bc4bb7b8846fb83ebb225b5f7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d35ef11bc4bb7b8846fb83ebb225b5f7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\541981cd305cfb02bc10ca42d967569d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\541981cd305cfb02bc10ca42d967569d\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\da6a9786235ea00a08096ae4dd4da2cd\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\da6a9786235ea00a08096ae4dd4da2cd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\9c285bb802c8dcffb28e3cdc13bcec75\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\9c285bb802c8dcffb28e3cdc13bcec75\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\cbc5bde0fe570ab7820053256404424e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\cbc5bde0fe570ab7820053256404424e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\30caf2a160c5db39267551fe5fa44ab7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\30caf2a160c5db39267551fe5fa44ab7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\136900157f58014de35397d7f883de98\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\136900157f58014de35397d7f883de98\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\03a99ad99a2488d36b8d79369549867c\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\03a99ad99a2488d36b8d79369549867c\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\c0e18d832192d17a2abb3f4accfd5bed\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\c0e18d832192d17a2abb3f4accfd5bed\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\28dd68e799b1b6347709c5cbf71b6ec1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\28dd68e799b1b6347709c5cbf71b6ec1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\633afdc68ec2b72107e7664ea9f0d30e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Zesu\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\633afdc68ec2b72107e7664ea9f0d30e\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
+MERGED from [com.android.databinding:viewbinding:7.0.2] C:\Users\jkupi\.gradle\caches\transforms-3\391857fb9ecfdd92c27997809d9092e8\transformed\viewbinding-7.0.2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.databinding:viewbinding:7.0.2] C:\Users\jkupi\.gradle\caches\transforms-3\391857fb9ecfdd92c27997809d9092e8\transformed\viewbinding-7.0.2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ecadb9bcf79677136195fed56f1e8a12\transformed\design-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ecadb9bcf79677136195fed56f1e8a12\transformed\design-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\8fd11623966bb0584e113cba6c369170\transformed\appcompat-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\8fd11623966bb0584e113cba6c369170\transformed\appcompat-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jkupi\.gradle\caches\transforms-3\4af9808a9d01f52de3df22fd185d8f4a\transformed\constraint-layout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jkupi\.gradle\caches\transforms-3\4af9808a9d01f52de3df22fd185d8f4a\transformed\constraint-layout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\01ce58cb5dec02ff2dcf5e31777eb70a\transformed\support-fragment-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\01ce58cb5dec02ff2dcf5e31777eb70a\transformed\support-fragment-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\493d801043c7b5409de5c054a138310a\transformed\recyclerview-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\493d801043c7b5409de5c054a138310a\transformed\recyclerview-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\d09347d7015ac919f27baecb2a4aa9b5\transformed\animated-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\d09347d7015ac919f27baecb2a4aa9b5\transformed\animated-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\32d53bd70fb6aafefab88a38711e2b80\transformed\support-core-ui-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\32d53bd70fb6aafefab88a38711e2b80\transformed\support-core-ui-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\d6cf91d70e9f90ed48c03cc4e82d4a1f\transformed\support-core-utils-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\d6cf91d70e9f90ed48c03cc4e82d4a1f\transformed\support-core-utils-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ca25ee580cf311222cbfee59d001e30e\transformed\transition-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ca25ee580cf311222cbfee59d001e30e\transformed\transition-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\a924792ed09f27f71b341992b008677d\transformed\support-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\a924792ed09f27f71b341992b008677d\transformed\support-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\a22f9ff71f1edf1fe4f66b386fb8e4a4\transformed\viewpager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\a22f9ff71f1edf1fe4f66b386fb8e4a4\transformed\viewpager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\362c21bf486fe36d808c9907a31ee884\transformed\coordinatorlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\362c21bf486fe36d808c9907a31ee884\transformed\coordinatorlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\bbd22f0e830f120d1d7022e6a4a0b2fb\transformed\drawerlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\bbd22f0e830f120d1d7022e6a4a0b2fb\transformed\drawerlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\2ea285b7ae91134af2ca4bb77048a56f\transformed\slidingpanelayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\2ea285b7ae91134af2ca4bb77048a56f\transformed\slidingpanelayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\fdf1ba2d2c9953c3edf5b35f99d479af\transformed\customview-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\fdf1ba2d2c9953c3edf5b35f99d479af\transformed\customview-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\3b91920cf64056fe02a23d5f9234bf3e\transformed\swiperefreshlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\3b91920cf64056fe02a23d5f9234bf3e\transformed\swiperefreshlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\5278c2e8b81630465bb68ddee38799fd\transformed\asynclayoutinflater-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\5278c2e8b81630465bb68ddee38799fd\transformed\asynclayoutinflater-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\335934a6384f95abb2560c4dcdf086ba\transformed\loader-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\335934a6384f95abb2560c4dcdf086ba\transformed\loader-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\192ad8f6a0f651ff9f10305663e68198\transformed\support-compat-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\192ad8f6a0f651ff9f10305663e68198\transformed\support-compat-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ae0147c0b827ab8af8c45b5ef28395ad\transformed\cardview-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ae0147c0b827ab8af8c45b5ef28395ad\transformed\cardview-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\5d596afbbf514aaec8702eb472ca97f3\transformed\versionedparcelable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\5d596afbbf514aaec8702eb472ca97f3\transformed\versionedparcelable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\5469d3acc753b2c845dfdf96e65ea703\transformed\cursoradapter-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\5469d3acc753b2c845dfdf96e65ea703\transformed\cursoradapter-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\jkupi\.gradle\caches\transforms-3\24b7454e8c63cb44018c3eb80150e376\transformed\runtime-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\jkupi\.gradle\caches\transforms-3\24b7454e8c63cb44018c3eb80150e376\transformed\runtime-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\00c853c6be18376f60855f1362b85a1c\transformed\interpolator-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\00c853c6be18376f60855f1362b85a1c\transformed\interpolator-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\a95499803a806bc20d1fd4638c0c9eec\transformed\documentfile-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\a95499803a806bc20d1fd4638c0c9eec\transformed\documentfile-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ebc0c7c92882fadc8fdb9f45927fc821\transformed\localbroadcastmanager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ebc0c7c92882fadc8fdb9f45927fc821\transformed\localbroadcastmanager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ab4ac626fa615bb51ff79c5f5a113f59\transformed\print-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ab4ac626fa615bb51ff79c5f5a113f59\transformed\print-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\jkupi\.gradle\caches\transforms-3\b2c59d30b7c8b57319743475697d8ad1\transformed\viewmodel-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\jkupi\.gradle\caches\transforms-3\b2c59d30b7c8b57319743475697d8ad1\transformed\viewmodel-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\jkupi\.gradle\caches\transforms-3\315627340ffe1ce39273a67babb101e6\transformed\livedata-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\jkupi\.gradle\caches\transforms-3\315627340ffe1ce39273a67babb101e6\transformed\livedata-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\jkupi\.gradle\caches\transforms-3\3d30d1dfc52eef7a30e76658177aa636\transformed\livedata-core-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\jkupi\.gradle\caches\transforms-3\3d30d1dfc52eef7a30e76658177aa636\transformed\livedata-core-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\jkupi\.gradle\caches\transforms-3\9144f778eb61599c0354b3e5bd6c8d2f\transformed\runtime-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\jkupi\.gradle\caches\transforms-3\9144f778eb61599c0354b3e5bd6c8d2f\transformed\runtime-1.1.1\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Zesu\Event-Registration-App-master\EventRegistration-Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
