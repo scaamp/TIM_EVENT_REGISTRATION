@@ -1,11 +1,10 @@
 package eventregistration.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @Entity
 public class Registration {
+
     private int id;
 
     public void setId(int value) {
@@ -13,6 +12,8 @@ public class Registration {
     }
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(unique = true, nullable = false)
     public int getId() {
         return this.id;
     }

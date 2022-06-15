@@ -14,6 +14,7 @@ import java.sql.Date;
 import java.sql.Time;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class EventRegistrationService implements EventRegistrationServiceInterface{
@@ -152,6 +153,11 @@ public class EventRegistrationService implements EventRegistrationServiceInterfa
     }
 
     @Transactional
+    public java.util.Optional<Registration> getRegistrationById(Integer id) {
+        return registrationRepository.findById(id);
+    }
+
+    @Transactional
     public List<Registration> getRegistrationsForPerson(Person person) {
         if (person == null) {
             throw new IllegalArgumentException("Person cannot be null!");
@@ -174,6 +180,28 @@ public class EventRegistrationService implements EventRegistrationServiceInterfa
             eventsAttendedByPerson.add(r.getEvent());
         }
         return eventsAttendedByPerson;
+    }
+
+    @Transactional
+    public void deletePerson(String name) {
+        personRepository.deleteById(name);
+    }
+
+    @Transactional
+    public void deleteEvent(String name) {
+        eventRepository.deleteById(name);
+    }
+
+    @Transactional
+    public void deleteRegistration(Integer id) {
+        registrationRepository.deleteById(id);
+    }
+
+    @Transactional
+    public void updatePerson(String name, Person personUpdated) {
+        Person personToUpdate = personRepository.findPersonByName(name);
+        personToUpdate.setName(personUpdated.getName());
+        personRepository.save(personToUpdate);
     }
 
     public <T> List<T> toList(Iterable<T> iterable) {

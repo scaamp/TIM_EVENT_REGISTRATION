@@ -9,6 +9,8 @@ import eventregistration.model.Registration;
 import eventregistration.service.EventRegistrationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.Date;
@@ -16,6 +18,7 @@ import java.sql.Time;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @CrossOrigin(origins = "*")
 @RestController
@@ -73,7 +76,22 @@ public class EventRegistrationRestController {
         return convertToDto(service.getPerson(name));
     }
 
-    @GetMapping(value = {"/registrations", "/registrations/"})
+//    @GetMapping(value = {"/registrations", "/registrations/"})
+//    public List<RegistrationDto> getAllRegistrations() {
+//        List<RegistrationDto> registrationDtos = new ArrayList<>();
+//        for (Registration registration : service.getAllRegistrations()) {
+//            registrationDtos.add(convertToDto(registration));
+//        }
+//        return registrationDtos;
+//    }
+
+    @GetMapping({"/registrations/{id}"})
+    public Optional<Registration> getRegistrationById(@PathVariable Integer id) {
+        //return new ResponseEntity<>(service.getRegistrationById(id), HttpStatus.OK);
+        return service.getRegistrationById(id);
+    }
+
+    @GetMapping(value = {"/registrations/", "/registrations/"})
     public RegistrationDto getRegistration(@RequestParam(name = "person") PersonDto pDto,
                                            @RequestParam(name = "event") EventDto eDto) throws IllegalArgumentException {
         Person p = service.getPerson(pDto.getName());
@@ -103,6 +121,24 @@ public class EventRegistrationRestController {
     @GetMapping(value = {"/events/{name}", "/events/{name}/"})
     public EventDto getEventByName(@PathVariable("name") String name) throws IllegalArgumentException {
         return convertToDto(service.getEvent(name));
+    }
+
+    @DeleteMapping({"/persons/{name}"})
+    public ResponseEntity<Person> deletePerson(@PathVariable("name") String name) {
+        service.deletePerson(name);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
+    @DeleteMapping({"/events/{name}"})
+    public ResponseEntity<Event> deleteEvent(@PathVariable("name") String name) {
+        service.deleteEvent(name);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
+    @DeleteMapping({"/registrations/person/{name}"})
+    public ResponseEntity<Event> deleteRegistration(@PathVariable("name") Integer id) {
+        service.deleteRegistration(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
     private EventDto convertToDto(Event e) {
