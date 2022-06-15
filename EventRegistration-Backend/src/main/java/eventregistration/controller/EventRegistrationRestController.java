@@ -87,7 +87,6 @@ public class EventRegistrationRestController {
 
     @GetMapping({"/registrations/{id}"})
     public Optional<Registration> getRegistrationById(@PathVariable Integer id) {
-        //return new ResponseEntity<>(service.getRegistrationById(id), HttpStatus.OK);
         return service.getRegistrationById(id);
     }
 
@@ -135,8 +134,8 @@ public class EventRegistrationRestController {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    @DeleteMapping({"/registrations/person/{name}"})
-    public ResponseEntity<Event> deleteRegistration(@PathVariable("name") Integer id) {
+    @DeleteMapping({"/registrations/{id}"})
+    public ResponseEntity<Event> deleteRegistration(@PathVariable("id") Integer id) {
         service.deleteRegistration(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
