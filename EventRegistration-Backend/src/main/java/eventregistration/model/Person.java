@@ -7,14 +7,15 @@ import java.io.Serializable;
 
 @Entity
 @Table
-public class Person{
-private String name;
-   
-   public void setName(String value) {
-this.name = value;
+public class Person {
+    private String name;
+
+    public void setName(String value) {
+        this.name = value;
     }
-   @Id
-public String getName() {
-return this.name;
-       }
-   }
+
+    @Id
+    public String getName() {
+        return this.name;
+    }
+}
