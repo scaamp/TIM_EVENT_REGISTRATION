@@ -140,7 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
-                android:onClick="addPerson"
+                android:onClick="scanQR"
                 android:text="@string/scan_qr_code" />
 
         </LinearLayout>
