@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
@@ -347,7 +348,11 @@ public class MainActivity extends AppCompatActivity {
         final Spinner eventSpinner = (Spinner) findViewById(R.id.eventspinner);
         String urlString = "";
         error = "";
-        if (!partSpinner.getSelectedItem().toString().equals("Please select..."))
+        if (!partSpinner.getSelectedItem().toString().equals("Please select...") && !eventSpinner.getSelectedItem().toString().equals("Please select..."))
+        {
+            urlString = "/registrations/person/" + partSpinner.getSelectedItem().toString();
+        }
+        else if (!partSpinner.getSelectedItem().toString().equals("Please select..."))
         {
             urlString = "persons/" + partSpinner.getSelectedItem().toString();
         }
@@ -355,6 +360,7 @@ public class MainActivity extends AppCompatActivity {
         {
             urlString = "events/" + eventSpinner.getSelectedItem().toString();
         }
+
 
         HttpUtils.deleteByUrl(urlString, new RequestParams(), new JsonHttpResponseHandler() {
             @Override
@@ -368,7 +374,8 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     error += errorResponse.get("message").toString();
                 } catch (JSONException e) {
-                    error += e.getMessage();
+                    e.getMessage();
+                    Toast.makeText(getApplicationContext(),"First you have to unregister person from the event before you delete it", Toast.LENGTH_LONG).show();
                 }
                 refreshErrorMessage();
             }
