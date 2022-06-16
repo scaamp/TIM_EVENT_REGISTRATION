@@ -15,8 +15,8 @@
     <string name="register_button">Register</string>
     <string name="delete_button">Delete</string>
     <string name="newevent_hint">Event name:</string>
-    <string name="refresh_button">Refresh lists</string>
+    <string name="refresh_button">Refresh</string>
     <string name="name_prompt">Select name</string>
-    <string name="scan_qr_code">Add person by QR CODE</string>
+    <string name="scan_qr_code">Scan QR CODE</string>
 
 </resources>

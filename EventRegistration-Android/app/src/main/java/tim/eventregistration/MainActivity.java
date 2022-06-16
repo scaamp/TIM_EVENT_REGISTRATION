@@ -42,12 +42,13 @@ public class MainActivity extends AppCompatActivity {
     private ArrayAdapter<String> personAdapter;
     private ArrayAdapter<String> eventAdapter;
     private final List<String> eventNames = new ArrayList<>();
-
+    private static final String ACTION_SCAN = "com.google.zxing.client.android.SCAN";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        TextView tv = (TextView) findViewById(R.id.newperson_name);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -184,10 +185,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addPerson(View v) {
+        TextView tv = (TextView) findViewById(R.id.newperson_name);
         error = "";
-
-        final TextView tv = (TextView) findViewById(R.id.newperson_name);
-
         HttpUtils.post("persons/" + tv.getText().toString(), new RequestParams(), new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
@@ -397,8 +396,6 @@ public class MainActivity extends AppCompatActivity {
         refreshErrorMessage();
     }
 
-    static final String ACTION_SCAN = "com.google.zxing.client.android.SCAN";
-
     //product barcode mode
     public void scanBar(View v) {
         try {
@@ -450,13 +447,15 @@ public class MainActivity extends AppCompatActivity {
 
     //on ActivityResult method
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+        TextView tv = (TextView) findViewById(R.id.newperson_name);
         if (requestCode == 0) {
             if (resultCode == RESULT_OK) {
                 //get the extras that are returned from the intent
                 String contents = intent.getStringExtra("SCAN_RESULT");
                 String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
-                Toast toast = Toast.makeText(this, "Content:" + contents + " Format:" + format, Toast.LENGTH_LONG);
-                toast.show();
+                tv.setText(contents);
+//                Toast toast = Toast.makeText(this, "Content:" + contents + " Format:" + format, Toast.LENGTH_LONG);
+//                toast.show();
             }
         }
     }
