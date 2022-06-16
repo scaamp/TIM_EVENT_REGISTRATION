@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-29:12
 MERGED from [com.android.databinding:viewbinding:7.0.2] C:\Users\jkupi\.gradle\caches\transforms-3\391857fb9ecfdd92c27997809d9092e8\transformed\viewbinding-7.0.2\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ecadb9bcf79677136195fed56f1e8a12\transformed\design-28.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\8fd11623966bb0584e113cba6c369170\transformed\appcompat-v7-28.0.0\AndroidManifest.xml:17:1-22:12
@@ -36,29 +36,37 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\jkupi\.gradle\cach
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\jkupi\.gradle\caches\transforms-3\315627340ffe1ce39273a67babb101e6\transformed\livedata-1.1.1\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\jkupi\.gradle\caches\transforms-3\3d30d1dfc52eef7a30e76658177aa636\transformed\livedata-core-1.1.1\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\jkupi\.gradle\caches\transforms-3\9144f778eb61599c0354b3e5bd6c8d2f\transformed\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-29:12
 	package
 		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:3:5-36
 		INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-29:12
 		INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:1-29:12
 		INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:4:5-67
+ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:5:22-64
+uses-feature#android.hardware.camera.any
+ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:6:5-64
+	android:name
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:6:19-61
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:7:5-65
+	android:name
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:7:22-62
 application
-ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:5:5-23:19
+ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:9:5-27:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ecadb9bcf79677136195fed56f1e8a12\transformed\design-28.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\ecadb9bcf79677136195fed56f1e8a12\transformed\design-28.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\jkupi\.gradle\caches\transforms-3\4af9808a9d01f52de3df22fd185d8f4a\transformed\constraint-layout-1.1.3\AndroidManifest.xml:9:5-20
@@ -70,37 +78,37 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\jkupi\.gra
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\jkupi\.gradle\caches\transforms-3\192ad8f6a0f651ff9f10305663e68198\transformed\support-compat-28.0.0\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:11:9-55
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:15:9-55
 activity#tim.eventregistration.MainActivity
-ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:12:9-22:20
+ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:16:9-26:20
 	android:label
-		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:15:13-45
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:19:13-45
 	android:exported
-		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:14:13-36
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:18:13-36
 	android:theme
-		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:16:13-71
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:20:13-71
 	android:name
-		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:13:13-41
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:17:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:17:13-21:29
+ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:18:17-69
+ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:18:25-66
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:20:17-77
+ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:20:27-74
+		ADDED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml:24:27-74
 uses-sdk
 INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\jkupi\TIM_EVENT_REGISTRATION\EventRegistration-Android\app\src\main\AndroidManifest.xml
