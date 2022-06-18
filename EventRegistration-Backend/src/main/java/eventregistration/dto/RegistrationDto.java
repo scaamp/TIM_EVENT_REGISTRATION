@@ -5,6 +5,7 @@ public class RegistrationDto {
     private PersonDto person;
     private EventDto event;
 
+
     public RegistrationDto() {
     }
 

@@ -43,12 +43,13 @@ public class MainActivity extends AppCompatActivity {
     private ArrayAdapter<String> eventAdapter;
     private final List<String> eventNames = new ArrayList<>();
     private static final String ACTION_SCAN = "com.google.zxing.client.android.SCAN";
+    private TextView tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView tv = (TextView) findViewById(R.id.newperson_name);
+        tv = (TextView) findViewById(R.id.newperson_name);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -117,105 +118,9 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private Bundle getTimeFromLabel(String text) {
-        Bundle rtn = new Bundle();
-        String comps[] = text.toString().split(":");
-        int hour = 12;
-        int minute = 0;
-
-        if (comps.length == 2) {
-            hour = Integer.parseInt(comps[0]);
-            minute = Integer.parseInt(comps[1]);
-        }
-
-        rtn.putInt("hour", hour);
-        rtn.putInt("minute", minute);
-
-        return rtn;
-    }
-
-    private Bundle getDateFromLabel(String text) {
-        Bundle rtn = new Bundle();
-        String comps[] = text.toString().split("-");
-        int day = 1;
-        int month = 1;
-        int year = 1;
-
-        if (comps.length == 3) {
-            day = Integer.parseInt(comps[0]);
-            month = Integer.parseInt(comps[1]);
-            year = Integer.parseInt(comps[2]);
-        }
-
-        rtn.putInt("day", day);
-        rtn.putInt("month", month-1);
-        rtn.putInt("year", year);
-
-        return rtn;
-    }
-
-    public void showTimePickerDialog(View v) {
-        TextView tf = (TextView) v;
-        Bundle args = getTimeFromLabel(tf.getText().toString());
-        args.putInt("id", v.getId());
-
-        TimePickerFragment newFragment = new TimePickerFragment();
-        newFragment.setArguments(args);
-        newFragment.show(getSupportFragmentManager(), "timePicker");
-    }
-
-    public void showDatePickerDialog(View v) {
-        TextView tf = (TextView) v;
-        Bundle args = getDateFromLabel(tf.getText().toString());
-        args.putInt("id", v.getId());
-
-        DatePickerFragment newFragment = new DatePickerFragment();
-        newFragment.setArguments(args);
-        newFragment.show(getSupportFragmentManager(), "datePicker");
-    }
-
-    public void setTime(int id, int h, int m) {
-        TextView tv = (TextView) findViewById(id);
-        tv.setText(String.format("%02d:%02d", h, m));
-    }
-
-    public void setDate(int id, int d, int m, int y) {
-        TextView tv = (TextView) findViewById(id);
-        tv.setText(String.format("%02d-%02d-%04d", d, m + 1, y));
-    }
-
-    public void addPerson(View v) {
-        TextView tv = (TextView) findViewById(R.id.newperson_name);
-        error = "";
-        HttpUtils.post("persons/" + tv.getText().toString(), new RequestParams(), new JsonHttpResponseHandler() {
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
-                try {
-                    JSONObject serverResp = new JSONObject(response.toString());
-                } catch (JSONException e) {
-                    error += e.getMessage();
-                }
-                refreshErrorMessage();
-                tv.setText("");
-            }
-
-            @Override
-            public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
-                try {
-                    error += errorResponse.get("message").toString();
-                } catch (JSONException e) {
-                    error += e.getMessage();
-                }
-                refreshErrorMessage();
-            }
-        });
-
-
-
-    }
-    public void addEvent(View v) {
+    public RequestParams initialEventParameters() {
         // start time
-        TextView tv = (TextView) findViewById(R.id.starttime);
+        tv = (TextView) findViewById(R.id.starttime);
         String text = tv.getText().toString();
         String comps[] = text.split(":");
 
@@ -253,7 +158,107 @@ public class MainActivity extends AppCompatActivity {
         rp.add("startTime", formatter.format(startHours) + ":" + formatter.format(startMinutes));
         rp.add("endTime", formatter.format(endHours) + ":" + formatter.format(endMinutes));
 
+        return rp;
+    }
 
+    private Bundle getTimeFromLabel(String text) {
+        Bundle rtn = new Bundle();
+        String comps[] = text.toString().split(":");
+        int hour = 12;
+        int minute = 0;
+
+        if (comps.length == 2) {
+            hour = Integer.parseInt(comps[0]);
+            minute = Integer.parseInt(comps[1]);
+        }
+
+        rtn.putInt("hour", hour);
+        rtn.putInt("minute", minute);
+
+        return rtn;
+    }
+
+    private Bundle getDateFromLabel(String text) {
+        Bundle rtn = new Bundle();
+        String comps[] = text.toString().split("-");
+        int day = 1;
+        int month = 1;
+        int year = 1;
+
+        if (comps.length == 3) {
+            day = Integer.parseInt(comps[0]);
+            month = Integer.parseInt(comps[1]);
+            year = Integer.parseInt(comps[2]);
+        }
+
+        rtn.putInt("day", day);
+        rtn.putInt("month", month - 1);
+        rtn.putInt("year", year);
+
+        return rtn;
+    }
+
+    public void showTimePickerDialog(View v) {
+        TextView tf = (TextView) v;
+        Bundle args = getTimeFromLabel(tf.getText().toString());
+        args.putInt("id", v.getId());
+
+        TimePickerFragment newFragment = new TimePickerFragment();
+        newFragment.setArguments(args);
+        newFragment.show(getSupportFragmentManager(), "timePicker");
+    }
+
+    public void showDatePickerDialog(View v) {
+        TextView tf = (TextView) v;
+        Bundle args = getDateFromLabel(tf.getText().toString());
+        args.putInt("id", v.getId());
+
+        DatePickerFragment newFragment = new DatePickerFragment();
+        newFragment.setArguments(args);
+        newFragment.show(getSupportFragmentManager(), "datePicker");
+    }
+
+    public void setTime(int id, int h, int m) {
+        TextView tv = (TextView) findViewById(id);
+        tv.setText(String.format("%02d:%02d", h, m));
+    }
+
+    public void setDate(int id, int d, int m, int y) {
+        TextView tv = (TextView) findViewById(id);
+        tv.setText(String.format("%02d-%02d-%04d", d, m + 1, y));
+    }
+
+    public void addPerson(View v) {
+        error = "";
+        HttpUtils.post("persons/" + tv.getText().toString(), new RequestParams(), new JsonHttpResponseHandler() {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+                try {
+                    JSONObject serverResp = new JSONObject(response.toString());
+                } catch (JSONException e) {
+                    error += e.getMessage();
+                }
+                refreshErrorMessage();
+                refreshLists();
+                tv.setText("");
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+                try {
+                    error += errorResponse.get("message").toString();
+                } catch (JSONException e) {
+                    error += e.getMessage();
+                }
+                refreshErrorMessage();
+                refreshLists();
+            }
+        });
+    }
+
+    public void addEvent(View v) {
+        String name = tv.getText().toString();
+        RequestParams rp = initialEventParameters();
         HttpUtils.post("events/" + name, rp, new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, JSONObject response) {
@@ -263,6 +268,7 @@ public class MainActivity extends AppCompatActivity {
                     error += e.getMessage();
                 }
                 refreshErrorMessage();
+                refreshLists();
                 ((TextView) findViewById(R.id.newevent_name)).setText("");
             }
 
@@ -274,6 +280,7 @@ public class MainActivity extends AppCompatActivity {
                     error += e.getMessage();
                 }
                 refreshErrorMessage();
+                refreshLists();
             }
         });
     }
@@ -292,9 +299,10 @@ public class MainActivity extends AppCompatActivity {
         HttpUtils.post("register", rp, new JsonHttpResponseHandler() {
 
             @Override
-            public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
+            public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, JSONArray response) {
                 eventSpinner.setSelection(0);
                 partSpinner.setSelection(0);
+                //Toast.makeText(getApplicationContext(),"Successfully registration for the event", Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -311,12 +319,97 @@ public class MainActivity extends AppCompatActivity {
 
         partSpinner.setSelection(0);
         eventSpinner.setSelection(0);
-
         refreshErrorMessage();
     }
 
+    public void delete(View v) {
+        final Spinner partSpinner = (Spinner) findViewById(R.id.personspinner);
+        final Spinner eventSpinner = (Spinner) findViewById(R.id.eventspinner);
+        String urlString = "";
+        error = "";
+        if (!partSpinner.getSelectedItem().toString().equals("Please select...") && !eventSpinner.getSelectedItem().toString().equals("Please select...")) {
+            urlString = "/registrations/person/" + partSpinner.getSelectedItem().toString();
+        } else if (!partSpinner.getSelectedItem().toString().equals("Please select...")) {
+            urlString = "persons/" + partSpinner.getSelectedItem().toString();
+        } else if (!eventSpinner.getSelectedItem().toString().equals("Please select...")) {
+            urlString = "events/" + eventSpinner.getSelectedItem().toString();
+        }
+
+        HttpUtils.deleteByUrl(urlString, new RequestParams(), new JsonHttpResponseHandler() {
+            @Override
+            public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, JSONArray response) {
+                eventSpinner.setSelection(0);
+                partSpinner.setSelection(0);
+                refreshLists();
+                refreshErrorMessage();
+            }
+
+            @Override
+            public void onFailure(int statusCode, cz.msebera.android.httpclient.Header[] headers, Throwable throwable, JSONObject errorResponse) {
+                try {
+                    error += errorResponse.get("message").toString();
+                    refreshLists();
+                } catch (JSONException e) {
+                    error += e.getMessage();
+                }
+                refreshErrorMessage();
+            }
+
+        });
+
+        partSpinner.setSelection(0);
+        eventSpinner.setSelection(0);
+
+        refreshErrorMessage();
+        refreshLists();
+
+    }
+
+    public void editEvent(View v) {
+        final Spinner partSpinner = (Spinner) findViewById(R.id.personspinner);
+        final Spinner eventSpinner = (Spinner) findViewById(R.id.eventspinner);
+        String name = eventSpinner.getSelectedItem().toString();
+        RequestParams rp = initialEventParameters();
+        String urlString = "events/" + name;
+        error = "";
+
+        HttpUtils.putByUrl(urlString, rp, new JsonHttpResponseHandler() {
+            @Override
+            public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, JSONArray response) {
+                eventSpinner.setSelection(0);
+                partSpinner.setSelection(0);
+                refreshLists();
+                refreshErrorMessage();
+            }
+
+            @Override
+            public void onFailure(int statusCode, cz.msebera.android.httpclient.Header[] headers, Throwable throwable, JSONObject errorResponse) {
+                try {
+                    error += errorResponse.get("message").toString();
+                    refreshLists();
+                } catch (JSONException e) {
+                    error += e.getMessage();
+                }
+                refreshErrorMessage();
+            }
+
+        });
+
+        partSpinner.setSelection(0);
+        eventSpinner.setSelection(0);
+
+        refreshErrorMessage();
+        refreshLists();
+
+    }
+
     public void refreshLists(View view) {
-        refreshList(personAdapter ,personNames, "persons");
+        refreshList(personAdapter, personNames, "persons");
+        refreshList(eventAdapter, eventNames, "events");
+    }
+
+    public void refreshLists() {
+        refreshList(personAdapter, personNames, "persons");
         refreshList(eventAdapter, eventNames, "events");
     }
 
@@ -327,7 +420,7 @@ public class MainActivity extends AppCompatActivity {
             public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
                 names.clear();
                 names.add("Please select...");
-                for( int i = 0; i < response.length(); i++){
+                for (int i = 0; i < response.length(); i++) {
                     try {
                         names.add(response.getJSONObject(i).getString("name"));
                     } catch (Exception e) {
@@ -348,52 +441,6 @@ public class MainActivity extends AppCompatActivity {
                 refreshErrorMessage();
             }
         });
-    }
-
-
-    public void delete(View view) {
-        final Spinner partSpinner = (Spinner) findViewById(R.id.personspinner);
-        final Spinner eventSpinner = (Spinner) findViewById(R.id.eventspinner);
-        String urlString = "";
-        error = "";
-        if (!partSpinner.getSelectedItem().toString().equals("Please select...") && !eventSpinner.getSelectedItem().toString().equals("Please select..."))
-        {
-            urlString = "/registrations/person/" + partSpinner.getSelectedItem().toString();
-        }
-        else if (!partSpinner.getSelectedItem().toString().equals("Please select..."))
-        {
-            urlString = "persons/" + partSpinner.getSelectedItem().toString();
-        }
-        else if (!eventSpinner.getSelectedItem().toString().equals("Please select..."))
-        {
-            urlString = "events/" + eventSpinner.getSelectedItem().toString();
-        }
-
-
-        HttpUtils.deleteByUrl(urlString, new RequestParams(), new JsonHttpResponseHandler() {
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
-                eventSpinner.setSelection(0);
-                partSpinner.setSelection(0);
-            }
-
-            @Override
-            public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
-                try {
-                    error += errorResponse.get("message").toString();
-                } catch (JSONException e) {
-                    e.getMessage();
-                    Toast.makeText(getApplicationContext(),"First you have to unregister person from the event before you delete it", Toast.LENGTH_LONG).show();
-                }
-                refreshErrorMessage();
-            }
-
-        });
-
-        partSpinner.setSelection(0);
-        eventSpinner.setSelection(0);
-
-        refreshErrorMessage();
     }
 
     //product barcode mode
@@ -447,7 +494,6 @@ public class MainActivity extends AppCompatActivity {
 
     //on ActivityResult method
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
-        TextView tv = (TextView) findViewById(R.id.newperson_name);
         if (requestCode == 0) {
             if (resultCode == RESULT_OK) {
                 //get the extras that are returned from the intent

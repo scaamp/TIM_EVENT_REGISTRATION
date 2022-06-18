@@ -79,6 +79,7 @@
       </select>
     </label>
     <button id='registration-button' v-bind:disabled="!selectedPerson || !selectedEvent" @click="registerEvent(selectedPerson, selectedEvent)">Register</button>
+    <button id='delete-button' v-bind:disabled="!selectedPerson || !selectedEvent" @click="deleteRegisterFromEvent(selectedPerson, selectedEvent)">Delete</button>
     <br/>
     <span v-if="errorRegistration" style="color:red">Error: {{errorRegistration}}</span>
     <hr>

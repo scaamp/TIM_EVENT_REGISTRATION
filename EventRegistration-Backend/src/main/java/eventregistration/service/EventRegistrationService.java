@@ -3,6 +3,7 @@ package eventregistration.service;
 import eventregistration.dao.EventRepository;
 import eventregistration.dao.PersonRepository;
 import eventregistration.dao.RegistrationRepository;
+import eventregistration.dto.EventDto;
 import eventregistration.model.Event;
 import eventregistration.model.Person;
 import eventregistration.model.Registration;
@@ -14,10 +15,9 @@ import java.sql.Date;
 import java.sql.Time;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
-public class EventRegistrationService implements EventRegistrationServiceInterface{
+public class EventRegistrationService implements EventRegistrationServiceInterface {
 
     @Autowired
     private EventRepository eventRepository;
@@ -58,21 +58,21 @@ public class EventRegistrationService implements EventRegistrationServiceInterfa
         // Input validation
         String error = "";
         if (name == null || name.trim().length() == 0) {
-            error = error + "Event name cannot be empty! ";
+            error += "Event name cannot be empty! ";
         } else if (eventRepository.existsById(name)) {
             throw new IllegalArgumentException("Event has already been created!");
         }
         if (date == null) {
-            error = error + "Event date cannot be empty! ";
+            error += "Event date cannot be empty! ";
         }
         if (startTime == null) {
-            error = error + "Event start time cannot be empty! ";
+            error += "Event start time cannot be empty! ";
         }
         if (endTime == null) {
-            error = error + "Event end time cannot be empty! ";
+            error += "Event end time cannot be empty! ";
         }
         if (endTime != null && startTime != null && endTime.before(startTime)) {
-            error = error + "Event end time cannot be before event start time!";
+            error += "Event end time cannot be before event start time!";
         }
         error = error.trim();
         if (error.length() > 0) {
@@ -97,7 +97,7 @@ public class EventRegistrationService implements EventRegistrationServiceInterfa
         if (name == null || name.trim().length() == 0) {
             throw new IllegalArgumentException("Event name cannot be empty!");
         }
-		return eventRepository.findByName(name);
+        return eventRepository.findByName(name);
     }
 
     @Transactional
@@ -109,17 +109,17 @@ public class EventRegistrationService implements EventRegistrationServiceInterfa
     public Registration register(Person person, Event event) {
         String error = "";
         if (person == null) {
-            error = error + "Person needs to be selected for registration! ";
+            error += "Person needs to be selected for registration! ";
         } else if (!personRepository.existsById(person.getName())) {
-            error = error + "Person does not exist! ";
+            error += "Person does not exist! ";
         }
         if (event == null) {
-            error = error + "Event needs to be selected for registration!";
+            error += "Event needs to be selected for registration!";
         } else if (!eventRepository.existsById(event.getName())) {
-            error = error + "Event does not exist!";
+            error += "Event does not exist!";
         }
         if (registrationRepository.existsByPersonAndEvent(person, event)) {
-            error = error + "Person is already registered to this event!";
+            error += "Person is already registered to this event!";
         }
 
         error = error.trim();
@@ -150,6 +150,15 @@ public class EventRegistrationService implements EventRegistrationServiceInterfa
         }
 
         return registrationRepository.findByPersonAndEvent(person, event);
+    }
+
+    @Transactional
+    public List<Registration> getRegistrationsByEvent(Event event) {
+        if (event == null) {
+            throw new IllegalArgumentException("Event cannot be null!");
+        }
+
+        return registrationRepository.findByEvent(event);
     }
 
     @Transactional
@@ -184,16 +193,46 @@ public class EventRegistrationService implements EventRegistrationServiceInterfa
 
     @Transactional
     public void deletePerson(String name) {
+        String error = "";
+        Person p = personRepository.findPersonByName(name);
+        List<Registration> registrations = registrationRepository.findByPerson(p);
+        for (Registration r : registrations) {
+            if (r.getEvent() != null) {
+                error += "First you have to unregister person from the event before you delete it";
+            }
+
+            error = error.trim();
+
+            if (error.length() > 0) {
+                throw new IllegalArgumentException(error);
+            }
+        }
         personRepository.deleteById(name);
     }
 
+
     @Transactional
     public void deleteEvent(String name) {
+        String error = "";
+        Event e = eventRepository.findByName(name);
+        List<Registration> registrations = registrationRepository.findByEvent(e);
+        for (Registration r : registrations) {
+            if (r.getPerson() != null) {
+                error += "First you have to unregister person from the event before you delete it";
+            }
+
+            error = error.trim();
+
+            if (error.length() > 0) {
+                throw new IllegalArgumentException(error);
+            }
+        }
         eventRepository.deleteById(name);
     }
 
     @Transactional
     public void deleteRegistration(Integer id) {
+
         registrationRepository.deleteById(id);
     }
 
@@ -202,6 +241,24 @@ public class EventRegistrationService implements EventRegistrationServiceInterfa
         Person personToUpdate = personRepository.findPersonByName(name);
         personToUpdate.setName(personUpdated.getName());
         personRepository.save(personToUpdate);
+    }
+
+    @Transactional
+    public void updateEvent(String name, Event eventUpdated) {
+        Event eventToUpdate = eventRepository.findByName(name);
+        eventToUpdate.setDate(eventUpdated.getDate());
+        eventToUpdate.setStartTime(eventUpdated.getStartTime());
+        eventToUpdate.setEndTime(eventUpdated.getEndTime());
+        eventRepository.save(eventToUpdate);
+    }
+
+    @Transactional
+    public void updateEvent(String name, EventDto eventUpdated) {
+        Event eventToUpdate = eventRepository.findByName(name);
+        eventToUpdate.setDate(eventUpdated.getEventDate());
+        eventToUpdate.setStartTime(eventUpdated.getStartTime());
+        eventToUpdate.setEndTime(eventUpdated.getEndTime());
+        eventRepository.save(eventToUpdate);
     }
 
     public <T> List<T> toList(Iterable<T> iterable) {

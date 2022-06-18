@@ -26,8 +26,8 @@ public class RegistrationManager {
         return this.registrations;
     }
 
-    public void setRegistrations(Set<Registration> registrationss) {
-        this.registrations = registrationss;
+    public void setRegistrations(Set<Registration> registrations) {
+        this.registrations = registrations;
     }
 
     private Set<Event> events;

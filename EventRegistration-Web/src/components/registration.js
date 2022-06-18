@@ -43,6 +43,7 @@ export default {
       errorEvent: '',
       errorRegistration: '',
       response: [],
+      registrations: []
     }
   },
   created: function () {
@@ -104,6 +105,32 @@ export default {
         this.selectedPerson = '';
         this.selectedEvent = '';
         this.errorRegistration = '';
+      })
+      .catch(e => {
+        e = e.response.data.message ? e.response.data.message : e;
+        this.errorRegistration = e;
+        console.log(e);
+      });
+    },
+
+    deleteRegisterFromEvent: function (personName, eventName) {
+      let event = this.events.find(x => x.name === eventName);
+      let person = this.persons.find(x => x.name === personName);
+      //let registration = this.registrations.find(x => x.id === registrationId);
+      let params = {
+        person: person.name,
+        event: event.name,
+        //registration: registration.id
+      };
+
+      AXIOS.delete('/registrations/${id}', {}, {params: params})
+      .then(response => {
+        person.eventsAttended.pop(event)
+        this.selectedPerson = '';
+        this.selectedEvent = '';
+        this.errorRegistration = '';
+        let i = this.registrations.map(data => data.id).indexOf(id);
+                        this.registrations.splice(i, 1)
       })
       .catch(e => {
         e = e.response.data.message ? e.response.data.message : e;

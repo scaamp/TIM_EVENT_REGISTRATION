@@ -76,17 +76,17 @@ public class EventRegistrationRestController {
         return convertToDto(service.getPerson(name));
     }
 
-//    @GetMapping(value = {"/registrations", "/registrations/"})
-//    public List<RegistrationDto> getAllRegistrations() {
-//        List<RegistrationDto> registrationDtos = new ArrayList<>();
-//        for (Registration registration : service.getAllRegistrations()) {
-//            registrationDtos.add(convertToDto(registration));
-//        }
-//        return registrationDtos;
-//    }
+    @GetMapping(value = {"/registrations/all", "/registrations/all/"})
+    public List<RegistrationDto> getAllRegistrations() {
+        List<RegistrationDto> registrationDtos = new ArrayList<>();
+        for (Registration registration : service.getAllRegistrations()) {
+            registrationDtos.add(convertToDto(registration));
+        }
+        return registrationDtos;
+    }
 
     @GetMapping({"/registrations/{id}"})
-    public Optional<Registration> getRegistrationById(@PathVariable Integer id) {
+    public Optional<Registration> getRegistrationById(@PathVariable("id") Integer id) {
         return service.getRegistrationById(id);
     }
 
@@ -122,6 +122,8 @@ public class EventRegistrationRestController {
         return convertToDto(service.getEvent(name));
     }
 
+    // DELETE Mappings
+
     @DeleteMapping({"/persons/{name}"})
     public ResponseEntity<Person> deletePerson(@PathVariable("name") String name) {
         service.deletePerson(name);
@@ -135,10 +137,72 @@ public class EventRegistrationRestController {
     }
 
     @DeleteMapping({"/registrations/{id}"})
-    public ResponseEntity<Event> deleteRegistration(@PathVariable("id") Integer id) {
+    public ResponseEntity<Registration> deleteRegistration(@PathVariable("id") Integer id) {
         service.deleteRegistration(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
+
+    @DeleteMapping({"/registrations/person/{name}", "/registrations/person/{name}/"})
+    public ResponseEntity<Registration> deleteRegistrationsForPerson(@PathVariable("name") PersonDto pDto)
+            throws IllegalArgumentException {
+        Person p = service.getPerson(pDto.getName());
+        List<Registration> r = service.getRegistrationsByPerson(p);
+        for (Registration registration : r) {
+            service.deleteRegistration(registration.getId());
+        }
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
+//    @DeleteMapping(value = {"/registrations/", "/registrations/"})
+//    public ResponseEntity<Registration> deleteRegistration(@RequestParam(name = "person") PersonDto pDto,
+//                                           @RequestParam(name = "event") EventDto eDto) throws IllegalArgumentException {
+//        Person p = service.getPerson(pDto.getName());
+//        Event e = service.getEvent(eDto.getName());
+//
+//        Registration r = service.getRegistrationByPersonAndEvent(p, e);
+//        service.deleteRegistration(r.getId());
+//        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+//    }
+
+    // PUT Mappings
+
+    @PutMapping(value = {"/persons/{name}", "/persons/{name}/"})
+    public ResponseEntity<Person> updatePerson(@PathVariable("name") String name, @RequestBody Person person) throws IllegalArgumentException {
+        service.updatePerson(name, person);
+        return new ResponseEntity<>(service.getPerson(name), HttpStatus.OK);
+    }
+
+    @PutMapping(value = {"/events/{name}", "/events/{name}/"})
+    public EventDto updateEvent(@PathVariable("name") String name,  @RequestParam Date date,
+                                @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.TIME, pattern = "HH:mm") LocalTime startTime,
+                                @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.TIME, pattern = "HH:mm") LocalTime endTime) throws IllegalArgumentException {
+        Event eventFromPathVariable = service.getEvent(name);
+        eventFromPathVariable.setDate(date);
+        eventFromPathVariable.setStartTime(Time.valueOf(startTime));
+        eventFromPathVariable.setEndTime(Time.valueOf(endTime));
+        return convertToDto(service.getEvent(name));
+    }
+
+//    @PutMapping(value = {"/events/{name}", "/events/{name}/"})
+//    public EventDto updateEvent(@PathVariable("name") String name, @RequestBody EventDto eDto) throws IllegalArgumentException {
+//        service.updateEvent(name, eDto);
+//        return convertToDto(service.getEvent(name));
+//    }
+    
+//  @PutMapping(value = {"/persons/{name}", "/persons/{name}/"})
+//  public PersonDto updatePerson(@PathVariable("name") String name, @RequestBody PersonDto pDto) throws IllegalArgumentException {
+//        Person p = service.getPerson(name);
+//        p.setName(pDto.getName());
+//
+//        return convertToDto(service.getPerson(name));
+//    }
+
+//    @PutMapping(value = {"/events/{name}", "/events/{name}/"})
+//    public ResponseEntity<Event> updateEvent(@PathVariable("name") String name, @RequestBody Event event) throws IllegalArgumentException {
+//        service.updateEvent(name, event);
+//        return new ResponseEntity<>(service.getEvent(name), HttpStatus.OK);
+//    }
+
 
     private EventDto convertToDto(Event e) {
         if (e == null) {
