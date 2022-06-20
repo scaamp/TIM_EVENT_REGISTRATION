@@ -67,6 +67,7 @@ export default {
         this.persons.push(response.data);
         this.errorPerson = '';
         this.newPerson = '';
+        created();
       })
       .catch(e => {
         e = e.response.data.message ? e.response.data.message : e;
@@ -83,6 +84,7 @@ export default {
         this.events.push(response.data);
         this.errorEvent = '';
         this.newEvent.name = this.newEvent.make = this.newEvent.movie = this.newEvent.company = this.newEvent.artist = this.newEvent.title = '';
+        created();
       })
       .catch(e => {
         e = e.response.data.message ? e.response.data.message : e;
@@ -105,6 +107,7 @@ export default {
         this.selectedPerson = '';
         this.selectedEvent = '';
         this.errorRegistration = '';
+        created();
       })
       .catch(e => {
         e = e.response.data.message ? e.response.data.message : e;
