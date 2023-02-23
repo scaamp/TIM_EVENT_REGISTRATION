@@ -19,12 +19,12 @@ To run the event registration system project, follow these steps:
 * Navigate to the project directory and run the core application using the Spring Boot command line interface.
 
 bash
-./mvnw spring-boot:run
+  ./mvnw spring-boot:run
 
 * Navigate to the Vue frontend directory and run the application using the Vue CLI.
 
-npm install
-npm run serve
+  npm install
+  npm run serve
 
 * Open the application in a web browser and register for the event by scanning the QR code provided by the system using a mobile device.
 
