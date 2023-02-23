@@ -19,14 +19,16 @@ To run the event registration system project, follow these steps:
 * Navigate to the project directory and run the core application using the Spring Boot command line interface.
 
 bash
-  ./mvnw spring-boot:run
+```
+./mvnw spring-boot:run
+```
 
 * Navigate to the Vue frontend directory and run the application using the Vue CLI.
-
-  npm install
-  npm run serve
-
+```
+npm install
+npm run serve
+```
 * Open the application in a web browser and register for the event by scanning the QR code provided by the system using a mobile device.
 
-##Conclusion
+## Conclusion
 This project is a simple event registration system that leverages the power of QR code scanning to make registration easier and more efficient. The use of Java and Spring Boot provides a stable and reliable backend, while Vue allows for a dynamic and responsive user interface. The addition of the QR code scanner enhances the user experience and reduces the need for manual data entry.
