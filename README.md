@@ -18,8 +18,8 @@ To run the event registration system project, follow these steps:
 * Clone the repository or download the source code from GitHub.
 * Navigate to the project directory and run the core application using the Spring Boot command line interface.
 
-bash
-```
+
+```bash
 ./mvnw spring-boot:run
 ```
 
